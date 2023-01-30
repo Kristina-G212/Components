@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.for_nav .cta-wrapper a {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.for_nav:hover a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.for_nav .cta-wrapper a:hover {
+    color: white;
+    transition: 500ms;
+}
+
+.for_nav canvas {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 20vw;
+}
+
+@keyframes text_in {
+    0% {
+        color: black;
+        letter-spacing: 480px;
+        scale: 0;
+        opacity: 0;
+    }
+    100% {
+        color: rgba(255, 255, 255, 0.1);
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes text_out {
+    0% {
+        color: rgba(255, 255, 255, 0.1);
+        scale: 100%;
+        opacity: 1;
+    }
+    100% {
+        color: black;
+        scale: 0;
+        opacity: 0;
+    }
+}
